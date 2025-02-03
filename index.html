@@ -10,97 +10,812 @@
     <title>Senior Discount Club</title>
     <style type="text/css">@font-face{font-family:Domine;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/domine/v20/L0x8DFMnlVwD4h3hu_qnZypEiw.woff2) format('woff2')}@font-face{font-family:Domine;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/domine/v20/L0x8DFMnlVwD4h3hu_qnZypEiw.woff2) format('woff2')}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v15/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t1R-tQKr51.woff2) format('woff2')}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:600;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v15/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t1R-tQKr51.woff2) format('woff2')}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:700;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v15/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t1R-tQKr51.woff2) format('woff2')}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:800;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v15/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t1R-tQKr51.woff2) format('woff2')}</style>
     <style type="text/css">
-        *{text-size-adjust:100%;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%}
-        html{height:100%;width:100%}
-        body{background: #FCFCFC;height:100%!important;margin:0!important;padding:0!important;width:100%!important;}
-        table{table-layout:fixed; width: 100%;margin:0;padding:0;}
-        table,td{mso-table-lspace:0;mso-table-rspace:0}
-        img{border:0;}.img-full{width:100%;display:block;height:auto;}
-        *{box-sizing: border-box;}blockquote{margin:0;padding:0;}
+        * {
+            -ms-text-size-adjust: 100%; /* Outlook supports this prefix */
+        }
+
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            background: #FCFCFC;
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+
+        table {
+            *table-layout: fixed;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        table, td {
+            mso-table-lspace: 0; /* Outlook-specific fix for spacing */
+            mso-table-rspace: 0; /* Outlook-specific fix for spacing */
+        }
+
+        img {
+            border: 0;
+            -ms-interpolation-mode: bicubic; /* Improves image rendering in Outlook */
+        }
+
+        .img-full {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+
+        blockquote {
+            margin: 0;
+            padding: 0;
+        }
     </style>
     <style type="text/css">
         @media screen and (max-device-width: 600px),screen and (max-width: 600px){.col-sm-1{display:block;width:8%!important}.col-sm-10{display:block;width:83%!important}.col-sm-11{display:block;width:92%!important}.col-sm-12{display:block;width:100%!important}.col-sm-2{display:block;width:17%!important}.col-sm-4{display:block;width:33%!important}.column{box-sizing:border-box;float:left}.col-sm-8{display:block;width:64%!important}.col-sm-6{display:inline-block;width:50%!important}}
     </style>
     <style type="text/css">
-        body{font-family: 'Nunito Sans', Arial, sans-serif;font-size:18px;line-height:28px;color: #383838;}
-        h1,h2,h3,h4,h5,h6,p{margin:0;}
-        a{color:#2E3192;text-decoration:underline;}strong{font-weight:700;}
-        ul,ol{padding-left: 20px;margin:0;}
-        p, li{font-family:'Nunito Sans',Arial,sans-serif;font-size:18px;line-height:28px;margin-bottom:16px;}.lh-1{line-height:1;}
-        .f-serif, .f-serif *{font-family:'Domine','Georgia',serif;}.f-20{font-size:20px;}
-        .body-content{padding-top:10px;padding-bottom:32px;}
-        .px-40{padding-left:30px;padding-right:30px;}.py-16{padding-top:16px;padding-bottom:16px;}.py-30{padding-top:30px;padding-bottom:30px;}.py-10{padding-top:10px;padding-bottom:10px;}.pb-16{padding-bottom:16px;}.pb-10{padding-bottom:10px;}.pt-16{padding-top:16px;}.px-30{padding-left:30px;padding-right:30px;}.mb-0{margin-bottom:0!important;}.pb-5{padding-bottom:5px;}.mb-16{margin-bottom:16px;}
-        .body-footer p{color:#fff;}.body-footer a{color:#fff;font-weight:700;}
-        .footer-signup{padding:13px 15px;background:#42459D;border-radius:6px;}
-        .footer-signup p{margin-bottom:0;}
-        .footer-small, .footer-small p{font-size:14px;line-height:20px;}
-        .logo-text{border-left:1px solid #ddd;} .logo-gram{text-align:right;}
-        .logo-text p{font-size:14px;line-height:20px;margin-bottom:0px;}
-        .card{border-radius:10px;border:1px solid #F2F2F2;background:#fff;overflow:hidden;}
-        .t-c{text-align:center;}.t-l{text-align:left;}
-        .sw-badge{display:inline-block;padding:5px 23px;background:#FEECF8;color:#2E3192;border-radius:0 0 16px 16px;font-size:16px;font-weight:400;line-height:20px;margin:0 auto;}
-        .a-text{padding-top:8px;padding-bottom:8px;font-size:16px;line-height:24px;}.a-text p{margin-bottom:0;}
-        .sw-title{font-size:24px;font-weight:700;line-height:32px;color:#2E3192;}.sw-title-20{font-size:20px;font-weight:700;line-height:26px;}.sw-title span{vertical-align:middle;}
-        .sw-title-sm{font-size:14px;font-style:normal;font-weight:700;line-height:24px;margin-bottom:11px;color:#7D7D7D;}
-        .sw-list-h{padding:2px 12px;display:inline-block;background:#2E3192;color:#fff;border-radius:0px 0px 11px 11px;font-size:20px;font-weight:700;line-height:28px;}
-        .t-w, .t-w span, .sw-title.t-w, .sw-title.t-w span{color:rgb(255, 255, 255)!important;color:#fff!important;}
-        .c-list{border-radius:8px;overflow:hidden;border:1px solid #ddd;}.sw-reward-desc{margin-top:16px;text-align: center;}.sw-reward-desc p{font-size:18px;}
-        .sw-cta a{display:inline-block;padding:15px 25px;border-radius:67px;background:#DA008F;font-size:17px;font-weight:800;line-height:1;color:#fff;text-decoration:none;}
-        .sw-cta{text-align:center;}.t-dark{color:#383838;}.bg-blue{background:#2E3192;}.t-blue{color:#2E3192;}
-        .triv-l p{font-size:14px;font-style:italic;margin-bottom:16px;opacity:0.7;line-height:18px;margin-top:5px;}
-        .triv-r{padding-left:25px;}.triv-r-a{vertical-align:middle;background:#fff;color:#383838;font-size:18px;border-radius:8px;padding:6px 13px;}.triv-r-a strong{font-weight:800;color:#DA008F;}
-        .t-cred{font-size:14px;color:#5b5b5b;font-style:italic;line-height:18px;}.t-cred a{color: #2E3192;}
-        .btn-cta a{padding:10px 25px;background:#DA008F;font-size:17px;font-weight:700;color:#fff;text-decoration:none;border-radius:60px;display:inline-block;}
-        .btn-cta-sm a{padding:6px 25px;background:#DA008F;font-size:17px;font-weight:700;color:#fff;text-decoration:none;border-radius:60px;display:inline-block;width:100%;}
-        .cta-pref p{margin-bottom:0;font-size:16px;line-height:18px;display:inline-block;line-height:24px;}.cta-pref a{color:#2E3192;}
-        .ic{height:24px;width:auto;display:inline-block;vertical-align:middle;}.deal-i td{border-bottom:1px solid #DDDDDD;}
-        .ic-32{height:32px;width:auto;display:inline-block;vertical-align:middle;}.ic-64{height:64px;width:auto;display:inline-block;vertical-align:middle;}
-        .deal-ic{width:170px;}.deal-ic img{width:150px;height:auto;display:inline-block;vertical-align:middle;}
-        .deal-con{padding:16px;}.deal-con .btn-cta a{padding:4px 20px;text-align:center;}.deal-con h5{margin-bottom:5px;font-size:20px;line-height:28px;font-weight:700;color:#2E3192;}.deal-con p{color:#5B5B5B;}
-        .note p{color:#5b5b5b;}.game a{display:block;}.game td{padding:8px;}
-        .h-list p{display:table;border-spacing:0;}.h-list p span{font-weight:800;color:#2E3192;display:table-cell;padding-right:16px;}
-        .ans-box{display:inline-block;background-color:#fff;font-size:25px;font-weight:400;padding:7px 25px;text-transform:uppercase;color:#DA008F;border-radius:8px;border: 1px solid #0E5E90;}
-        .img-h{width:auto;display:inline-block;}.s-s{color:#fff;}.s-s table{border-spacing:0;}.s-s .s-sl{width:109px;vertical-align:top;}.s-s .s-sl h3{font-size:30px;color:#FDC5EA;margin-bottom:16px;line-height:1.2;}
-        .s-s .s-sr{padding-left:32px;}.s-cta a{color:#2E3192;text-decoration:none;background:#FDC5EA;padding:7px 24px;border:1px solid #FDC5EA;border-radius:30px;font-weight:700;display:inline-block;white-space:nowrap;vertical-align:middle;line-height:25px;}
-        .s-cta img{margin-left:13px;vertical-align:middle;margin-top:0px;width:24px;height:auto;display:inline-block;}.s-cta span{display:inline-block;vertical-align:middle;}
-        .d-lg{display:block;}.d-sm{display:none;}.c-list h4{font-size:20px;line-height:28px;font-weight:700;margin-bottom:16px;}
-        .c-list ul{border-bottom:1px solid #ddd;margin-bottom:16px;}.c-list ul:last-child{border-bottom:none!important;margin-bottom:0!important;}
-        .c-list-r{border-left:0!important;border-right:0!important;border-radius:0!important;}.c-list-l ul{border-bottom:0!important;}
-        .hs{background:#EEEEFA;border:1px solid #ddd;border-radius:9px;}.hs-l{display:inline-block;padding-right:30px;margin-right:30px;border-right:1px solid #ddd;}.hs-l p{color:#2E3192;font-size:19px;font-family:'Domine','Georgia',serif;margin-bottom:0;}
-        .hs img{height:40px;}.tr-a{background:#F8F9FD;color:#383838;padding:4px 12px;border-radius:8px;border:1px solid #2E3192}.tr-a strong{color:#2E3192}
-        .hsn{background:#F8F9FD;border:1px solid #ddd;border-radius:9px;overflow:hidden;}.hsn table{border-spacing:0;}.hsn-l{width:168px;padding:0;}.hsn-r{padding:19px;}.hsn-r h3{font-size:26px;line-height:29px;color:#2E3192;margin-bottom:7px;}.hsn-r h3 a{color:#2E3192;text-decoration:none;}
-        .hsn-b{list-style:none;padding:0;margin:0;}.hsn-b li{display:inline-block;margin:0;margin-right:8px;line-height:0;}.hsn-b li img{height:21px;width:auto;vertical-align:middle;}
-        .headline-t, .headline-t a{font-weight:700;color:#000;text-decoration:underline;}
-        @media screen and (max-device-width:600px),screen and (max-width: 600px) {
-            .px-40,.body-footer,.px-30{padding-left:16px!important;padding-right:16px!important;}.db-sm, .deal-con .btn-cta a, .h-list p span{display:block!important;}
-            .logo img{height:40px!important;width:auto!important;}
-            .body-content{padding-bottom:16px!important;}
-            .logo-gram{text-align:center!important;}
-            .logo-text{text-align:center!important;padding:0 30px!important;border:none!important;}.logo-text p{font-size:12px!important;}
-            .triv-r{padding-left:0!important;}.t-l-sm{text-align:left!important;}.t-r-sm{text-align:right!important;}
-            .cta-pref p{font-size:14px!important;line-height:18px!important;}.deal-con{padding:16px 0!important;}
-            .s-s .s-sr{padding-left:0px!important;padding-top:10px!important;}.s-fas-c{padding-left:0!important;}
-            .s-s .s-sl{width:100%!important;display:table!important;white-space:nowrap!important;}.s-s .s-sl *{display:inline-block!important;vertical-align:middle;}.s-s .s-sl h3{font-size:25px!important;margin-right:16px!important;margin-bottom:0!important;}
-            .d-lg, .s-s .s-sl .d-lg{display:none!important;}.d-sm{display:block!important;}.sw-cta a{display:block!important;}
-            .hs-l{padding-right:16px!important;margin-right:16px!important;}.hs-l p{font-size:12px!important;line-height:17px!important;}.hs img{height:auto!important;max-width:130px!important;}
-            .s-cta a{display:block!important;}.s-cta a img{float:right!important;margin-top:6px!important;}
-            .hs.py-30{padding-top:16px!important;padding-bottom:16px!important;}
-            .hsn-l{width:124px!important;}.hsn-r{padding:8px!important}.hsn-r h3{font-size:18px!important;line-height:1.3!important;margin-bottom:4px!important;}.hsn-b li{margin-right: 5px!important}.hsn-b li img{height:18px!important;}
-            .btn-cta-sm a{width:auto!important;}.h-img{width:153px!important;margin:0 auto!important;}
+        body {
+            font-family: Arial, sans-serif; /* Fallback for 'Nunito Sans' */
+            font-size: 18px;
+            line-height: 28px;
+            color: #383838;
+        }
+
+        h1, h2, h3, h4, h5, h6, p {
+            margin: 0;
+        }
+
+        a {
+            color: #2E3192;
+            text-decoration: underline;
+        }
+
+        strong {
+            font-weight: bold; /* Use 'bold' instead of '700' for better compatibility */
+        }
+
+        ul, ol {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        p, li {
+            font-family: Arial, sans-serif; /* Fallback for 'Nunito Sans' */
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 16px;
+        }
+
+        .lh-1 {
+            line-height: 1;
+        }
+
+        .f-serif, .f-serif * {
+            font-family: Georgia, serif; /* Fallback for 'Domine' */
+        }
+
+        .f-20 {
+            font-size: 20px;
+        }
+
+        .body-content {
+            padding-top: 10px;
+            padding-bottom: 32px;
+        }
+
+        .px-40 {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .py-16 {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+
+        .py-30 {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .py-10 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .pb-16 {
+            padding-bottom: 16px;
+        }
+
+        .pb-10 {
+            padding-bottom: 10px;
+        }
+
+        .pt-16 {
+            padding-top: 16px;
+        }
+
+        .px-30 {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .mb-0 {
+            margin-bottom: 0 !important;
+        }
+
+        .pb-5 {
+            padding-bottom: 5px;
+        }
+
+        .mb-16 {
+            margin-bottom: 16px;
+        }
+
+        .body-footer p {
+            color: #fff;
+        }
+
+        .body-footer a {
+            color: #fff;
+            font-weight: bold; /* Use 'bold' instead of '700' */
+        }
+
+        .footer-signup {
+            padding: 13px 15px;
+            background: #42459D;
+        }
+
+        .footer-signup p {
+            margin-bottom: 0;
+        }
+
+        .footer-small, .footer-small p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .logo-text {
+            border-left: 1px solid #ddd;
+        }
+
+        .logo-gram {
+            text-align: right;
+        }
+
+        .logo-text p {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 0;
+        }
+
+        .card {
+            border: 1px solid #F2F2F2;
+            background: #fff;
+        }
+
+        .t-c {
+            text-align: center;
+        }
+
+        .t-l {
+            text-align: left;
+        }
+
+        .sw-badge {
+            display: inline-block;
+            padding: 5px 23px;
+            background: #FEECF8;
+            color: #2E3192;
+            font-size: 16px;
+            font-weight: normal; /* Use 'normal' instead of '400' */
+            line-height: 20px;
+            margin: 0 auto;
+        }
+
+        .a-text {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .a-text p {
+            margin-bottom: 0;
+        }
+
+        .sw-title {
+            font-size: 24px;
+            font-weight: bold; /* Use 'bold' instead of '700' */
+            line-height: 32px;
+            color: #2E3192;
+        }
+
+        .sw-title-20 {
+            font-size: 20px;
+            font-weight: bold; /* Use 'bold' instead of '700' */
+            line-height: 26px;
+        }
+
+        .sw-title span {
+            vertical-align: middle;
+        }
+
+        .sw-title-sm {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: bold; /* Use 'bold' instead of '700' */
+            line-height: 24px;
+            margin-bottom: 11px;
+            color: #7D7D7D;
+        }
+
+        .sw-list-h {
+            padding: 2px 12px;
+            display: inline-block;
+            background: #2E3192;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold; /* Use 'bold' instead of '700' */
+            line-height: 28px;
+        }
+
+        .t-w, .t-w span, .sw-title.t-w, .sw-title.t-w span, title.t-w span * {
+            color: #fff !important;
+        }
+
+        .c-list {
+            border: 1px solid #ddd;
+        }
+
+        .sw-reward-desc {
+            margin-top: 16px;
+            text-align: center;
+        }
+
+        .sw-reward-desc p {
+            font-size: 18px;
+        }
+
+        .sw-cta a {
+            display: inline-block;
+            padding: 15px 25px;
+            background: #DA008F;
+            font-size: 17px;
+            font-weight: bold; /* Use 'bold' instead of '800' */
+            line-height: 1;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .sw-cta {
+            text-align: center;
+        }
+
+        .t-dark {
+            color: #383838;
+        }
+
+        .bg-blue {
+            background: #2E3192;
+        }
+
+        .t-blue {
+            color: #2E3192;
+        }
+
+        .triv-l p {
+            font-size: 14px;
+            font-style: italic;
+            margin-bottom: 16px;
+            opacity: 0.7;
+            line-height: 18px;
+            margin-top: 5px;
+        }
+
+        .triv-r {
+            padding-left: 25px;
+        }
+
+        .triv-r-a {
+            vertical-align: middle;
+            background: #fff;
+            color: #383838;
+            font-size: 18px;
+            padding: 6px 13px;
+        }
+
+        .triv-r-a strong {
+            font-weight: bold; /* Use 'bold' instead of '800' */
+            color: #DA008F;
+        }
+
+        .t-cred {
+            font-size: 14px;
+            color: #5b5b5b;
+            font-style: italic;
+            line-height: 18px;
+        }
+
+        .t-cred a {
+            color: #2E3192;
+        }
+
+        .btn-cta a {
+            padding: 10px 0;
+            text-align: center;
+            background: #DA008F;
+            font-size: 17px;
+            font-weight: bold; /* Use 'bold' instead of '700' */
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-cta-sm a {
+            padding: 6px 15px;
+            background: #DA008F;
+            font-size: 17px;
+            font-weight: bold; /* Use 'bold' instead of '700' */
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .cta-pref p {
+            margin-bottom: 0;
+            font-size: 16px;
+            line-height: 18px;
+            display: inline-block;
+            line-height: 24px;
+        }
+
+        .cta-pref a {
+            color: #2E3192;
+        }
+
+        .ic {
+            height: 24px;
+            width: auto;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .deal-i td {
+            border-bottom: 1px solid #DDDDDD;
+        }
+
+        .ic-32 {
+            height: 32px;
+            width: auto;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .ic-64 {
+            height: 64px;
+            width: auto;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .deal-ic {
+            width: 170px;
+        }
+
+        .deal-ic img {
+            width: 150px;
+            height: auto;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .deal-con {
+            padding: 16px;
+        }
+
+        .deal-con .btn-cta a {
+            padding: 4px 20px;
+            text-align: center;
+        }
+
+        .deal-con h5 {
+            margin-bottom: 5px;
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: bold; /* Use 'bold' instead of '700' */
+            color: #2E3192;
+        }
+
+        .deal-con p {
+            color: #5B5B5B;
+        }
+
+        .note p {
+            color: #5b5b5b;
+        }
+
+        .game a {
+            display: block;
+        }
+
+        .game td {
+            padding: 8px;
+        }
+
+        .h-list p {
+            display: table;
+        }
+
+        .h-list p span {
+            font-weight: bold; /* Use 'bold' instead of '800' */
+            color: #2E3192;
+            display: table-cell;
+            padding-right: 16px;
+        }
+
+        .ans-box {
+            display: inline-block;
+            background-color: #fff;
+            font-size: 25px;
+            font-weight: normal; /* Use 'normal' instead of '400' */
+            padding: 7px 25px;
+            text-transform: uppercase;
+            color: #DA008F;
+            border: 1px solid #0E5E90;
+        }
+
+        .img-h {
+            width: auto;
+            display: inline-block;
+        }
+
+        .s-s {
+            color: #fff;
+        }
+
+        .s-s table {
+            border-spacing: 0;
+        }
+
+        .s-s .s-sl {
+            width: 109px;
+            vertical-align: top;
+        }
+
+        .s-s .s-sl h3 {
+            font-size: 30px;
+            color: #FDC5EA;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .s-s .s-sr {
+            padding-left: 32px;
+        }
+
+        .s-cta a {
+            color: #2E3192;
+            text-decoration: none;
+            background: #FDC5EA;
+            padding: 7px 24px;
+            border: 1px solid #FDC5EA;
+            font-weight: bold; /* Use 'bold' instead of '700' */
+            display: inline-block;
+            white-space: nowrap;
+            vertical-align: middle;
+            line-height: 25px;
+        }
+
+        .s-cta img {
+            margin-left: 13px;
+            vertical-align: middle;
+            margin-top: 0;
+            width: 24px;
+            height: auto;
+            display: inline-block;
+        }
+
+        .s-cta span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .d-lg {
+            display: block;
+        }
+
+        .d-sm {
+            display: none;
+        }
+
+        .c-list h4 {
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: bold; /* Use 'bold' instead of '700' */
+            margin-bottom: 16px;
+        }
+
+        .c-list ul {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 16px;
+        }
+
+        .c-list ul:last-child {
+            border-bottom: none !important;
+            margin-bottom: 0 !important;
+        }
+
+        .c-list-r {
+            border-left: 0 !important;
+            border-right: 0 !important;
+        }
+
+        .c-list-l ul {
+            border-bottom: 0 !important;
+        }
+
+        .hs {
+            background: #EEEEFA;
+            border: 1px solid #ddd;
+        }
+
+        .hs-l {
+            display: inline-block;
+            padding-right: 30px;
+            margin-right: 30px;
+            border-right: 1px solid #ddd;
+        }
+
+        .hs-l p {
+            color: #2E3192;
+            font-size: 19px;
+            font-family: Georgia, serif; /* Fallback for 'Domine' */
+            margin-bottom: 0;
+        }
+
+        .hs img {
+            height: 40px;
+        }
+
+        .tr-a {
+            background: #F8F9FD;
+            color: #383838;
+            padding: 4px 12px;
+            border: 1px solid #2E3192;
+        }
+
+        .tr-a strong {
+            color: #2E3192;
+        }
+
+        .hsn {
+            background: #F8F9FD;
+            border: 1px solid #ddd;
+        }
+
+        .hsn table {
+            border-spacing: 0;
+        }
+
+        .hsn-l {
+            width: 168px;
+            padding: 0;
+        }
+
+        .hsn-r {
+            padding: 19px;
+        }
+
+        .hsn-r h3 {
+            font-size: 26px;
+            line-height: 29px;
+            color: #2E3192;
+            margin-bottom: 7px;
+        }
+
+        .hsn-r h3 a {
+            color: #2E3192;
+            text-decoration: none;
+        }
+
+        .hsn-b {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .hsn-b li {
+            display: inline-block;
+            margin: 0;
+            margin-right: 8px;
+            line-height: 0;
+        }
+
+        .hsn-b li img {
+            height: 21px;
+            width: auto;
+            vertical-align: middle;
+        }
+
+        .headline-t, .headline-t a {
+            font-weight: bold; /* Use 'bold' instead of '700' */
+            color: #000;
+            text-decoration: underline;
+        }
+
+        @media screen and (max-device-width: 600px), screen and (max-width: 600px) {
+            .px-40, .body-footer, .px-30 {
+                padding-left: 16px !important;
+                padding-right: 16px !important;
+            }
+
+            .db-sm, .deal-con .btn-cta a, .h-list p span {
+                display: block !important;
+            }
+
+            .logo img {
+                height: 40px !important;
+                width: auto !important;
+            }
+
+            .body-content {
+                padding-bottom: 16px !important;
+            }
+
+            .logo-gram {
+                text-align: center !important;
+            }
+
+            .logo-text {
+                text-align: center !important;
+                padding: 0 30px !important;
+                border: none !important;
+            }
+
+            .logo-text p {
+                font-size: 12px !important;
+            }
+
+            .triv-r {
+                padding-left: 0 !important;
+            }
+
+            .t-l-sm {
+                text-align: left !important;
+            }
+
+            .t-r-sm {
+                text-align: right !important;
+            }
+
+            .cta-pref p {
+                font-size: 14px !important;
+                line-height: 18px !important;
+            }
+
+            .deal-con {
+                padding: 16px 0 !important;
+            }
+
+            .s-s .s-sr {
+                padding-left: 0 !important;
+                padding-top: 10px !important;
+            }
+
+            .s-fas-c {
+                padding-left: 0 !important;
+            }
+
+            .s-s .s-sl {
+                width: 100% !important;
+                display: table !important;
+                white-space: nowrap !important;
+            }
+
+            .s-s .s-sl * {
+                display: inline-block !important;
+                vertical-align: middle;
+            }
+
+            .s-s .s-sl h3 {
+                font-size: 25px !important;
+                margin-right: 16px !important;
+                margin-bottom: 0 !important;
+            }
+
+            .d-lg, .s-s .s-sl .d-lg {
+                display: none !important;
+            }
+
+            .d-sm {
+                display: block !important;
+            }
+
+            .sw-cta a {
+                display: block !important;
+            }
+
+            .hs-l {
+                padding-right: 16px !important;
+                margin-right: 16px !important;
+            }
+
+            .hs-l p {
+                font-size: 12px !important;
+                line-height: 17px !important;
+            }
+
+            .hs img {
+                height: auto !important;
+                max-width: 130px !important;
+            }
+
+            .s-cta a {
+                display: block !important;
+            }
+
+            .s-cta a img {
+                float: right !important;
+                margin-top: 6px !important;
+            }
+
+            .hs.py-30 {
+                padding-top: 16px !important;
+                padding-bottom: 16px !important;
+            }
+
+            .hsn-l {
+                width: 124px !important;
+            }
+
+            .hsn-r {
+                padding: 8px !important;
+            }
+
+            .hsn-r h3 {
+                font-size: 18px !important;
+                line-height: 1.3 !important;
+                margin-bottom: 4px !important;
+            }
+
+            .hsn-b li {
+                margin-right: 5px !important;
+            }
+
+            .hsn-b li img {
+                height: 18px !important;
+            }
+
+            .btn-cta-sm a {
+                width: auto !important;
+            }
+
+            .h-img {
+                width: 153px !important;
+                margin: 0 auto !important;
+            }
         }
     </style>
 <!--[if gte mso 9]>
 <style type="text/css">
-li { text-indent: -1em; }
+/*li { *text-indent: -1em; }*/
 table td { border-collapse: collapse; }
 </style>
 <![endif]-->
 </head>
 <body>
-    <table class="body" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;margin:0;">
+    <table class="body" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;margin:0 auto;">
         <tr>
             <td class="body-content" align="center" width="100%" valign="top">
-                <table border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;width:100%;max-width:600px;border-spacing:0 10px;"width="600" align="center">
+                <table border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;max-width:100%;width:600px;border-spacing:0 10px;"width="600" align="center">
                     <tr>
                         <td class="logo t-c pt-16 pb-10">
                             <table border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;width:100%;max-width:483px;" width="483" align="center">
@@ -142,10 +857,10 @@ table td { border-collapse: collapse; }
                                                 <h3 class="f-serif"><singleline label="Title">This week’s best NBN deals are here!</singleline></h3>
                                                 <ul class="hsn-b">
                                                     <li>
-                                                        <img editable src="./img/b1.png" width="134" alt="Brand">
+                                                        <img editable src="./img/b1.png" width="134" alt="Brand" style="width: 78px">
                                                     </li>
                                                     <li>
-                                                        <img editable src="./img/logo.png" width="134" alt="SDC">
+                                                        <img editable src="./img/logo.png" width="134" alt="SDC" style="width: 130px">
                                                     </li>
                                                 </ul>
                                             </td>
@@ -166,10 +881,10 @@ table td { border-collapse: collapse; }
                                                 <h3 class="f-serif"><singleline label="Title">This week’s best NBN deals are here!</singleline></h3>
                                                 <ul class="hsn-b">
                                                     <li>
-                                                        <img editable src="./img/b1.png" width="134" alt="Brand">
+                                                        <img editable src="./img/b1.png" width="134" alt="Brand" style="width: 78px">
                                                     </li>
                                                     <li>
-                                                        <img editable src="./img/logo.png" width="134" alt="SDC">
+                                                        <img editable src="./img/logo.png" width="134" alt="SDC" style="width: 130px">
                                                     </li>
                                                 </ul>
                                             </td>
@@ -190,10 +905,10 @@ table td { border-collapse: collapse; }
                                                 <h3 class="f-serif"><singleline label="Title">This week’s best NBN deals are here!</singleline></h3>
                                                 <ul class="hsn-b">
                                                     <li>
-                                                        <img editable src="./img/b1.png" width="134" alt="Brand">
+                                                        <img editable src="./img/b1.png" width="134" alt="Brand" style="width: 78px">
                                                     </li>
                                                     <li>
-                                                        <img editable src="./img/logo.png" width="134" alt="SDC">
+                                                        <img editable src="./img/logo.png" width="134" alt="SDC" style="width: 130px">
                                                     </li>
                                                 </ul>
                                             </td>
@@ -214,10 +929,10 @@ table td { border-collapse: collapse; }
                                                 <h3 class="f-serif"><singleline label="Title">This week’s best NBN deals are here!</singleline></h3>
                                                 <ul class="hsn-b">
                                                     <li>
-                                                        <img editable src="./img/b1.png" width="134" alt="Brand">
+                                                        <img editable src="./img/b1.png" width="134" alt="Brand" style="width: 78px">
                                                     </li>
                                                     <li>
-                                                        <img editable src="./img/logo.png" width="134" alt="SDC">
+                                                        <img editable src="./img/logo.png" width="134" alt="SDC" style="width: 130px">
                                                     </li>
                                                 </ul>
                                             </td>
@@ -249,6 +964,7 @@ table td { border-collapse: collapse; }
                                             <p>
                                                 <a href="https://seniorsdiscountclub.com.au/api/user-preferences?uid=[uuid,fallback=]&entry=[entry_point,fallback=]">
                                                     <img alt="Weather" border="0" class="img-full" src="https://widget.seniorsdiscountclub.com.au/weather/[postcode,fallback=2030]" width="100%" />
+                                                    <!-- <img alt="Weather" border="0" class="img-full" src="https://widget.seniorsdiscountclub.com.au/weather/53263" width="100%" style="width: 100%; height: auto" /> -->
                                                 </a>
                                             </p>
                                         </multiline>
@@ -344,7 +1060,7 @@ table td { border-collapse: collapse; }
                                                         <li>Coles is spicing up the home furniture game by taking on ALDI and Kmart with its new line of luxurious must-haves. The best part? <a href="#">You can style your home for as little as $7!</a></li>
                                                         <li>An iconic Aussie ice cream will be seeing a <a href="#">'small' change — and not the good kind</a>. How do you feel about this continuously happening to all our grocery goods?</li>
                                                     </ul>
-                                                    <h4>Finance & Money</h4>
+                                                    <h4>Finance &amp; Money</h4>
                                                     <ul>
                                                         <li>Our beloved Bunnings has been dethroned as Australia's top retailer this year, but by which store? <a href="#">Is it Woolworths? Kmart? Or ALDI? You might be surprised…</a></li>
                                                         <li>Coles is spicing up the home furniture game by taking on ALDI and Kmart with its new line of luxurious must-haves. The best part? <a href="#">You can style your home for as little as $7!</a></li>
@@ -500,7 +1216,7 @@ table td { border-collapse: collapse; }
                                                 From just <b>$7,999 per person*</b>, you’ll enjoy a 14 day itinerary showcasing Japan’s natural and modern marvels by rail.
                                             </p>
                                             <p class="btn-cta" style="text-align:center;">
-                                                <a href="#">BOOK NOW</a>
+                                                <a style="width: 150px; display: inline-block" href="#">BOOK NOW</a>
                                             </p>
                                         </multiline>
                                     </div>
@@ -649,7 +1365,7 @@ table td { border-collapse: collapse; }
                                     </h3>
                                     <table>
                                         <tr>
-                                            <td width="50%" class="col-sm-12" style="width:50%;vertical-align:top;">
+                                            <td width="50%" class="col-sm-12" style="width:30%; padding-right: 15px; vertical-align:top;">
                                                 <div class="pb-16">
                                                     <img editable src="./img/h1.png" alt="Headline Column" width="100%" class="img-full h-img">
                                                 </div>
@@ -659,12 +1375,11 @@ table td { border-collapse: collapse; }
                                                 <multiline label="Content">
                                                     <p>Includes $16.95 off per month for the first 6 months, then $81.95/mth (100/18) Mbps typical evening speed,</p>
                                                     <p class="btn-cta-sm" style="text-align:center;">
-                                                        <a href="#">View deal</a>
+                                                        <a style="padding: 6px 0" href="#">View deal</a>
                                                     </p>
                                                 </multiline>
                                             </td>
-                                            <td width="12" class="col-sm-12"></td>
-                                            <td width="50%" class="col-sm-12" style="width:50%;vertical-align:top;">
+                                            <td width="50%" class="col-sm-12" style="width:30%; padding-right: 15px; vertical-align:top;">
                                                 <div class="pb-16">
                                                     <img editable src="./img/h2.png" alt="Headline Column" width="100%" class="img-full h-img">
                                                 </div>
@@ -674,12 +1389,11 @@ table td { border-collapse: collapse; }
                                                 <multiline label="Content">
                                                     <p>Includes $15 off per month for the first 6 months, then $84.90/mth (100/34 typical evening speed, unlimited data)</p>
                                                     <p class="btn-cta-sm" style="text-align:center;">
-                                                        <a href="#">View deal</a>
+                                                        <a style="padding: 6px 0" href="#">View deal</a>
                                                     </p>
                                                 </multiline>
                                             </td>
-                                            <td width="12" class="col-sm-12"></td>
-                                            <td width="50%" class="col-sm-12" style="width:50%;vertical-align:top;">
+                                            <td width="50%" class="col-sm-12" style="width:30%; padding-right: 15px; vertical-align:top;">
                                                 <div class="pb-16">
                                                     <img editable src="./img/h3.png" alt="Headline Column" width="100%" class="img-full h-img">
                                                 </div>
@@ -689,7 +1403,7 @@ table td { border-collapse: collapse; }
                                                 <multiline label="Content">
                                                     <p>Includes $15 off per month for the first 6 months, then $84.90/mth (100/34 typical evening speed, unlimited data)</p>
                                                     <p class="btn-cta-sm" style="text-align:center;">
-                                                        <a href="#">View deal</a>
+                                                        <a style="padding: 6px 0" href="#">View deal</a>
                                                     </p>
                                                 </multiline>
                                             </td>
@@ -735,13 +1449,13 @@ table td { border-collapse: collapse; }
                                         <table class="pb-16">
                                             <tr>
                                                 <td style="width:11%;text-align:right;" class="t-l-sm">
-                                                    <img src="./img/ic-info-2.png" alt="Scroll Down Icon" width="20" style="width:20px;height:20px;display:inline-block;vertical-align:middle;">
+                                                    <img editable src="./img/ic-info-2.png" alt="Scroll Down Icon" width="20" style="width:20px;height:20px;display:inline-block;vertical-align:middle;">
                                                 </td>
                                                 <td class="triv-l t-c" style="padding:0 5px;">
                                                     <p class="mb-0" style="font-size:16px;line-height:24px;"><singleline label="Scroll Text">Scroll to the bottom of the newsletter for the answer.</singleline></p>
                                                 </td>
                                                 <td style="width:11%;text-align:left;" class="trivia-scroll-right">
-                                                    <img src="./img/ic-arrow-down-2.png" alt="Scroll Down Icon" width="20" style="width:20px;height:20px;display:inline-block;vertical-align:middle;">
+                                                    <img editable src="./img/ic-arrow-down-2.png" alt="Scroll Down Icon" width="20" style="width:20px;height:20px;display:inline-block;vertical-align:middle;">
                                                 </td>
                                             </tr>
                                         </table>
@@ -830,7 +1544,7 @@ table td { border-collapse: collapse; }
                                     <table class="note px-30">
                                         <tr>
                                             <td width="24px" style="width:24px;vertical-align:top;">
-                                                <img editable src="./img/ic-info-2.png" alt="Info Icon" width="24" height="24" class="ic" style="vertical-align:top;margin-top:4px;">
+                                                <img editable src="./img/ic-deals-w.png" alt="Info Icon" width="24" height="24" class="ic" style="vertical-align:top;margin-top:4px;">
                                             </td>
                                             <td style="padding-left:10px;">
                                                 <multiline label="Note">
@@ -897,26 +1611,26 @@ table td { border-collapse: collapse; }
                                             <tr>
                                                 <td class="col-sm-12" style="width:50%;">
                                                     <a href="https://seniorsdiscountclub.com.au/threads/the-official-ozword-thread.4288/?utm_source=campaign-monitor&utm_medium=email&utm_campaign=daily-newsletter">
-                                                        <img src="./img/game-1.png" width="262" height="71" editable alt="Play OzWord" class="img-full">
+                                                        <img editable src="./img/game-1.png" width="262" height="71"  alt="Play OzWord" class="img-full">
                                                     </a>
                                                 </td>
                                                 <td class="col-sm-12" style="width:50%;">
                                                     <a href="https://seniorsdiscountclub.com.au/threads/expert-six-letter-ozword.17781/?utm_source=campaign-monitor&utm_medium=email&utm_campaign=daily-newsletter">
-                                                        <img src="./img/game-2.png" width="262" height="71" editable alt="Play OzWord Expert Edition" class="img-full">
+                                                        <img editable src="./img/game-2.png" width="262" height="71"  alt="Play OzWord Expert Edition" class="img-full">
                                                     </a>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="col-sm-12" style="width:50%;">
                                                     <a href="https://seniorsdiscountclub.com.au/threads/the-official-sudoku-thread.4727/?utm_source=campaign-monitor&utm_medium=email&utm_campaign=daily-newsletter">
-                                                        <img src="./img/game-3.png" width="262" height="71" editable alt="Play Sudoku" class="img-full">
+                                                        <img editable src="./img/game-3.png" width="262" height="71"  alt="Play Sudoku" class="img-full">
                                                     </a>
                                                     <div class="games-img">
                                                     </div>
                                                 </td>
                                                 <td class="col-sm-12" style="width:50%;">
                                                     <a href="https://seniorsdiscountclub.com.au/threads/the-official-crossword-thread.34938/?utm_source=campaign-monitor&utm_medium=email&utm_campaign=daily-newsletter">
-                                                        <img src="./img/game-4.png" width="262" height="71" editable alt="Play Crossword" class="img-full">
+                                                        <img editable src="./img/game-4.png" width="262" height="71" alt="Play Crossword" class="img-full">
                                                     </a>
                                                 </td>
                                             </tr>
@@ -942,16 +1656,20 @@ table td { border-collapse: collapse; }
                                     <div class="h-list px-40 py-16">
                                         <multiline label="Content">
                                             <p>
-                                                <span>1879</span> Renowned Physicist Albert Einstein was born in Ulm, Germany.
+                                                <span>1879</span>
+                                                <span style="color: #383838">Renowned Physicist Albert Einstein was born in Ulm, Germany.</span>
                                             </p>
                                             <p>
-                                                <span>1971</span> Australian Open Men's Tennis: Ken Rosewall of Australia beats American defending champion Arthur Ashe 6-1, 7-5, 6-3; first man to win an Open era Grand Slam singles title without dropping a set.
+                                                <span>1971</span>
+                                                <span style="color: #383838">Australian Open Men's Tennis: Ken Rosewall of Australia beats American defending champion Arthur Ashe 6-1, 7-5, 6-3; first man to win an Open era Grand Slam singles title without dropping a set.</span>
                                             </p>
                                             <p>
-                                                <span>1996</span> Australia beat West Indies by 5 runs in an amazing cricket World Cup semi.
+                                                <span>1996</span>
+                                                <span style="color: #383838">Australia beat West Indies by 5 runs in an amazing cricket World Cup semi.</span>
                                             </p>
                                             <p>
-                                                <span>2013</span> Xi Jinping is named as the new President of the People's Republic of China.
+                                                <span>2013</span>
+                                                <span style="color: #383838">Xi Jinping is named as the new President of the People's Republic of China.</span>
                                             </p>
                                         </multiline>
                                     </div>
@@ -1000,7 +1718,7 @@ table td { border-collapse: collapse; }
                                                 </multiline>
                                                 <p class="s-cta">
                                                     <a href="https://seniorsdiscountclub.com.au/wp/lp-ebook/subscribe-v1/">
-                                                        <span>SUBSCRIBE</span> <img src="./img/ic-arrow-b.png" width="24" alt="Share">
+                                                        <span>SUBSCRIBE</span> <img editable src="./img/ic-arrow-b.png" width="24" alt="Share">
                                                     </a>
                                                 </p>
                                             </td>
